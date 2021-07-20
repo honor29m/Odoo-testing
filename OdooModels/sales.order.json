@@ -1,0 +1,359 @@
+{
+  "write_date": {
+    "string": "Last Updated on",
+    "type": "datetime"
+  },
+  "type_name": {
+    "string": "Type Name",
+    "type": "char"
+  },
+  "show_update_pricelist": {
+    "help": "Technical Field, True if the pricelist was changed;\n this will then display a recomputation button",
+    "string": "Has Pricelist Changed",
+    "type": "boolean"
+  },
+  "message_partner_ids": {
+    "string": "Followers (Partners)",
+    "type": "many2many"
+  },
+  "invoice_ids": {
+    "string": "Invoices",
+    "type": "many2many"
+  },
+  "validity_date": {
+    "string": "Expiration",
+    "type": "date"
+  },
+  "message_main_attachment_id": {
+    "string": "Main Attachment",
+    "type": "many2one"
+  },
+  "amount_total": {
+    "string": "Total",
+    "type": "monetary"
+  },
+  "team_id": {
+    "string": "Sales Team",
+    "type": "many2one"
+  },
+  "activity_date_deadline": {
+    "string": "Next Activity Deadline",
+    "type": "date"
+  },
+  "message_channel_ids": {
+    "string": "Followers (Channels)",
+    "type": "many2many"
+  },
+  "payment_term_id": {
+    "string": "Payment Terms",
+    "type": "many2one"
+  },
+  "activity_state": {
+    "help": "Status based on activities\nOverdue: Due date is already passed\nToday: Activity date is today\nPlanned: Future activities.",
+    "string": "Activity State",
+    "type": "selection"
+  },
+  "activity_exception_decoration": {
+    "help": "Type of the exception activity on record.",
+    "string": "Activity Exception Decoration",
+    "type": "selection"
+  },
+  "reference": {
+    "help": "The payment communication of this sale order.",
+    "string": "Payment Ref.",
+    "type": "char"
+  },
+  "message_has_error_counter": {
+    "help": "Number of messages with delivery error",
+    "string": "Number of errors",
+    "type": "integer"
+  },
+  "activity_ids": {
+    "string": "Activities",
+    "type": "one2many"
+  },
+  "date_order": {
+    "help": "Creation date of draft/sent orders,\nConfirmation date of confirmed orders.",
+    "string": "Order Date",
+    "type": "datetime"
+  },
+  "amount_by_group": {
+    "help": "type: [(name, amount, base, formated amount, formated base)]",
+    "string": "Tax amount by group",
+    "type": "binary"
+  },
+  "analytic_account_id": {
+    "help": "The analytic account related to a sales order.",
+    "string": "Analytic Account",
+    "type": "many2one"
+  },
+  "state": {
+    "string": "Status",
+    "type": "selection"
+  },
+  "transaction_ids": {
+    "string": "Transactions",
+    "type": "many2many"
+  },
+  "id": {
+    "string": "ID",
+    "type": "integer"
+  },
+  "create_date": {
+    "help": "Date on which sales order is created.",
+    "string": "Creation Date",
+    "type": "datetime"
+  },
+  "medium_id": {
+    "help": "This is the method of delivery, e.g. Postcard, Email, or Banner Ad",
+    "string": "Medium",
+    "type": "many2one"
+  },
+  "campaign_id": {
+    "help": "This is a name that helps you keep track of your different campaign efforts, e.g. Fall_Drive, Christmas_Special",
+    "string": "Campaign",
+    "type": "many2one"
+  },
+  "tag_ids": {
+    "string": "Tags",
+    "type": "many2many"
+  },
+  "message_attachment_count": {
+    "string": "Attachment Count",
+    "type": "integer"
+  },
+  "__last_update": {
+    "string": "Last Modified on",
+    "type": "datetime"
+  },
+  "client_order_ref": {
+    "string": "Customer Reference",
+    "type": "char"
+  },
+  "pricelist_id": {
+    "help": "If you change the pricelist, only newly added lines will be affected.",
+    "string": "Pricelist",
+    "type": "many2one"
+  },
+  "activity_user_id": {
+    "string": "Responsible User",
+    "type": "many2one"
+  },
+  "message_follower_ids": {
+    "string": "Followers",
+    "type": "one2many"
+  },
+  "sale_order_template_id": {
+    "string": "Quotation Template",
+    "type": "many2one"
+  },
+  "activity_exception_icon": {
+    "help": "Icon to indicate an exception activity.",
+    "string": "Icon",
+    "type": "char"
+  },
+  "display_name": {
+    "string": "Display Name",
+    "type": "char"
+  },
+  "create_uid": {
+    "string": "Created by",
+    "type": "many2one"
+  },
+  "access_token": {
+    "string": "Security Token",
+    "type": "char"
+  },
+  "access_warning": {
+    "string": "Access warning",
+    "type": "text"
+  },
+  "expected_date": {
+    "help": "Delivery date you can promise to the customer, computed from the minimum lead time of the order lines.",
+    "string": "Expected Date",
+    "type": "datetime"
+  },
+  "user_id": {
+    "string": "Salesperson",
+    "type": "many2one"
+  },
+  "name": {
+    "string": "Order Reference",
+    "type": "char"
+  },
+  "partner_invoice_id": {
+    "string": "Invoice Address",
+    "type": "many2one"
+  },
+  "website_message_ids": {
+    "help": "Website communication history",
+    "string": "Website Messages",
+    "type": "one2many"
+  },
+  "partner_shipping_id": {
+    "string": "Delivery Address",
+    "type": "many2one"
+  },
+  "invoice_status": {
+    "string": "Invoice Status",
+    "type": "selection"
+  },
+  "note": {
+    "string": "Terms and conditions",
+    "type": "text"
+  },
+  "message_is_follower": {
+    "string": "Is Follower",
+    "type": "boolean"
+  },
+  "write_uid": {
+    "string": "Last Updated by",
+    "type": "many2one"
+  },
+  "require_payment": {
+    "help": "Request an online payment to the customer in order to confirm orders automatically.",
+    "string": "Online Payment",
+    "type": "boolean"
+  },
+  "signature": {
+    "help": "Signature received through the portal.",
+    "string": "Signature",
+    "type": "binary"
+  },
+  "origin": {
+    "help": "Reference of the document that generated this sales order request.",
+    "string": "Source Document",
+    "type": "char"
+  },
+  "fiscal_position_id": {
+    "help": "Fiscal positions are used to adapt taxes and accounts for particular customers or sales orders/invoices.The default value comes from the customer.",
+    "string": "Fiscal Position",
+    "type": "many2one"
+  },
+  "signed_on": {
+    "help": "Date of the signature.",
+    "string": "Signed On",
+    "type": "datetime"
+  },
+  "message_unread": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Unread Messages",
+    "type": "boolean"
+  },
+  "commitment_date": {
+    "help": "This is the delivery date promised to the customer. If set, the delivery order will be scheduled based on this date rather than product lead times.",
+    "string": "Delivery Date",
+    "type": "datetime"
+  },
+  "currency_rate": {
+    "help": "The rate of the currency to the currency of rate 1 applicable at the date of the order",
+    "string": "Currency Rate",
+    "type": "float"
+  },
+  "partner_id": {
+    "string": "Customer",
+    "type": "many2one"
+  },
+  "amount_tax": {
+    "string": "Taxes",
+    "type": "monetary"
+  },
+  "amount_untaxed": {
+    "string": "Untaxed Amount",
+    "type": "monetary"
+  },
+  "order_line": {
+    "string": "Order Lines",
+    "type": "one2many"
+  },
+  "amount_undiscounted": {
+    "string": "Amount Before Discount",
+    "type": "float"
+  },
+  "sale_order_option_ids": {
+    "string": "Optional Products Lines",
+    "type": "one2many"
+  },
+  "activity_type_icon": {
+    "help": "Font awesome icon e.g. fa-tasks",
+    "string": "Activity Type Icon",
+    "type": "char"
+  },
+  "require_signature": {
+    "help": "Request a online signature to the customer in order to confirm orders automatically.",
+    "string": "Online Signature",
+    "type": "boolean"
+  },
+  "company_id": {
+    "string": "Company",
+    "type": "many2one"
+  },
+  "access_url": {
+    "help": "Customer Portal URL",
+    "string": "Portal Access URL",
+    "type": "char"
+  },
+  "invoice_count": {
+    "string": "Invoice Count",
+    "type": "integer"
+  },
+  "message_has_sms_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "SMS Delivery error",
+    "type": "boolean"
+  },
+  "message_unread_counter": {
+    "help": "Number of unread messages",
+    "string": "Unread Messages Counter",
+    "type": "integer"
+  },
+  "activity_type_id": {
+    "string": "Next Activity Type",
+    "type": "many2one"
+  },
+  "message_has_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "Message Delivery error",
+    "type": "boolean"
+  },
+  "is_expired": {
+    "string": "Is expired",
+    "type": "boolean"
+  },
+  "signed_by": {
+    "help": "Name of the person that signed the SO.",
+    "string": "Signed By",
+    "type": "char"
+  },
+  "message_needaction": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Action Needed",
+    "type": "boolean"
+  },
+  "activity_summary": {
+    "string": "Next Activity Summary",
+    "type": "char"
+  },
+  "message_needaction_counter": {
+    "help": "Number of messages which requires an action",
+    "string": "Number of Actions",
+    "type": "integer"
+  },
+  "authorized_transaction_ids": {
+    "string": "Authorized Transactions",
+    "type": "many2many"
+  },
+  "message_ids": {
+    "string": "Messages",
+    "type": "one2many"
+  },
+  "source_id": {
+    "help": "This is the source of the link, e.g. Search Engine, another domain, or name of email list",
+    "string": "Source",
+    "type": "many2one"
+  },
+  "currency_id": {
+    "string": "Currency",
+    "type": "many2one"
+  }
+}

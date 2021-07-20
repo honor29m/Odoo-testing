@@ -1,0 +1,10 @@
+<channel-adaptor name="jpos-channel" class="org.jpos.q2.iso.ChannelAdaptor" logger="Q2">
+    <channel class="org.jpos.iso.channel.NACChannel" packager="org.jpos.iso.packager.GenericPackager">
+        <property name="host" value="isobridge.jpos.org"/>
+        <property name="port" value="9000"/>
+        <property name="packager-config" value="cfg/base1.xml" />
+    </channel>
+    <in>jpos-send</in>
+    <out>jpos-receive</out>
+    <reconnect-delay>10000</reconnect-delay>
+</channel-adaptor>

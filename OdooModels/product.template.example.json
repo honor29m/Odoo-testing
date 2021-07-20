@@ -1,0 +1,160 @@
+[
+  {
+    "write_date": "2021-06-11 18:46:24",
+    "description_purchase": false,
+    "sale_delay": 0.0,
+    "message_main_attachment_id": false,
+    "reordering_max_qty": 0.0,
+    "can_image_1024_be_zoomed": false,
+    "activity_date_deadline": false,
+    "attribute_line_ids": [],
+    "type": "product",
+    "message_channel_ids": [],
+    "tracking": "none",
+    "incoming_qty": 0.0,
+    "location_id": false,
+    "activity_state": false,
+    "virtual_available": 0.0,
+    "message_has_error_counter": 0,
+    "seller_ids": [],
+    "volume_uom_name": "m³",
+    "price": 0.0,
+    "id": 32,
+    "uom_name": "Units",
+    "default_code": false,
+    "visible_qty_configurator": true,
+    "invoice_policy": "order",
+    "message_attachment_count": 0,
+    "pricelist_id": false,
+    "expense_policy": "no",
+    "active": true,
+    "image_1920": false,
+    "create_uid": [
+      2,
+      "Mitchell Admin"
+    ],
+    "uom_id": [
+      1,
+      "Units"
+    ],
+    "valuation": "manual_periodic",
+    "description_pickingin": false,
+    "visible_expense_policy": false,
+    "message_is_follower": true,
+    "uom_po_id": [
+      1,
+      "Units"
+    ],
+    "description_pickingout": false,
+    "taxes_id": [
+      1
+    ],
+    "reordering_min_qty": 0.0,
+    "sale_line_warn": "no-message",
+    "purchase_ok": true,
+    "company_id": false,
+    "weight_uom_name": "kg",
+    "message_has_sms_error": false,
+    "sales_count": 0.0,
+    "list_price": 3.0,
+    "route_from_categ_ids": [],
+    "qty_available": 0.0,
+    "has_available_route_ids": false,
+    "property_account_expense_id": false,
+    "activity_type_id": false,
+    "property_stock_production": [
+      24,
+      "Virtual Locations/Production"
+    ],
+    "message_ids": [
+      816,
+      814
+    ],
+    "product_variant_id": [
+      42,
+      "Algodón de 500grs "
+    ],
+    "warehouse_id": false,
+    "lst_price": 3.0,
+    "message_partner_ids": [
+      3
+    ],
+    "responsible_id": [
+      2,
+      "Mitchell Admin"
+    ],
+    "nbr_reordering_rules": 0,
+    "activity_exception_decoration": false,
+    "description_sale": false,
+    "activity_ids": [],
+    "product_variant_count": 1,
+    "outgoing_qty": 0.0,
+    "create_date": "2021-06-11 18:44:50",
+    "barcode": "nan",
+    "image_512": false,
+    "product_variant_ids": [
+      42
+    ],
+    "standard_price": 0.0,
+    "__last_update": "2021-06-11 18:46:24",
+    "description_picking": false,
+    "weight": 0.0,
+    "activity_user_id": false,
+    "message_follower_ids": [
+      725
+    ],
+    "activity_exception_icon": false,
+    "display_name": "Algodón de 500grs ",
+    "volume": 0.0,
+    "sequence": 1,
+    "packaging_ids": [],
+    "valid_product_template_attribute_line_ids": [],
+    "name": "Algodón de 500grs ",
+    "website_message_ids": [],
+    "categ_id": [
+      1,
+      "All"
+    ],
+    "route_ids": [],
+    "write_uid": [
+      2,
+      "Mitchell Admin"
+    ],
+    "image_256": false,
+    "color": 0,
+    "sale_ok": true,
+    "description": "Cantidad por bulto: 25 Rollos",
+    "message_unread": false,
+    "supplier_taxes_id": [
+      5
+    ],
+    "cost_method": "standard",
+    "property_account_income_id": false,
+    "variant_seller_ids": [],
+    "activity_type_icon": false,
+    "image_1024": false,
+    "property_stock_inventory": [
+      22,
+      "Virtual Locations/Inventory adjustment"
+    ],
+    "message_unread_counter": 0,
+    "service_type": "manual",
+    "message_has_error": false,
+    "has_configurable_attributes": false,
+    "message_needaction": false,
+    "is_product_variant": false,
+    "activity_summary": false,
+    "cost_currency_id": [
+      3,
+      "VEF"
+    ],
+    "message_needaction_counter": 0,
+    "sale_line_warn_msg": false,
+    "currency_id": [
+      3,
+      "VEF"
+    ],
+    "pricelist_item_count": 0,
+    "image_128": false
+  }
+]

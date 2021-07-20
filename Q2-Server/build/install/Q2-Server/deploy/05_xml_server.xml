@@ -1,0 +1,11 @@
+<server class="org.jpos.q2.iso.QServer" logger="Q2" name="xml-server-8000" realm="xml-server-8000">
+    <attr name="port" type="java.lang.Integer">8000</attr>
+    <channel class="org.jpos.iso.channel.NACChannel" packager="org.jpos.iso.packager.GenericPackager" header="0000000000" type="server" logger="Q2" realm="xml-server-8000">
+        <property name="timeout" value="180000"/>
+        <property name="packager-config" value="cfg/base1.xml"/>
+    </channel>
+    <request-listener class="org.jpos.iso.IncomingListener" logger="Q2" realm="incoming-request-listener">
+        <property name="queue" value="TXNMGR"/>
+        <property name="ctx.DESTINATION" value="jPOS-AUTORESPONDER"/>
+    </request-listener>
+</server>

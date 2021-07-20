@@ -1,0 +1,508 @@
+{
+  "restrict_mode_hash_table": {
+    "help": "If ticked, the accounting entry or invoice receives a hash as soon as it is posted and cannot be modified anymore.",
+    "string": "Lock Posted Entries with Hash",
+    "type": "boolean"
+  },
+  "write_date": {
+    "string": "Last Updated on",
+    "type": "datetime"
+  },
+  "inalterable_hash": {
+    "string": "Inalterability Hash",
+    "type": "char"
+  },
+  "invoice_date_due": {
+    "string": "Due Date",
+    "type": "date"
+  },
+  "message_main_attachment_id": {
+    "string": "Main Attachment",
+    "type": "many2one"
+  },
+  "edi_document_ids": {
+    "string": "Edi Document",
+    "type": "one2many"
+  },
+  "amount_total": {
+    "string": "Total",
+    "type": "monetary"
+  },
+  "team_id": {
+    "string": "Sales Team",
+    "type": "many2one"
+  },
+  "activity_date_deadline": {
+    "string": "Next Activity Deadline",
+    "type": "date"
+  },
+  "message_channel_ids": {
+    "string": "Followers (Channels)",
+    "type": "many2many"
+  },
+  "invoice_line_ids": {
+    "string": "Invoice lines",
+    "type": "one2many"
+  },
+  "activity_state": {
+    "help": "Status based on activities\nOverdue: Due date is already passed\nToday: Activity date is today\nPlanned: Future activities.",
+    "string": "Activity State",
+    "type": "selection"
+  },
+  "message_has_error_counter": {
+    "help": "Number of messages with delivery error",
+    "string": "Number of errors",
+    "type": "integer"
+  },
+  "amount_total_signed": {
+    "string": "Total Signed",
+    "type": "monetary"
+  },
+  "amount_by_group": {
+    "help": "Edit Tax amounts if you encounter rounding issues.",
+    "string": "Tax amount by group",
+    "type": "binary"
+  },
+  "state": {
+    "string": "Status",
+    "type": "selection"
+  },
+  "id": {
+    "string": "ID",
+    "type": "integer"
+  },
+  "amount_residual": {
+    "string": "Amount Due",
+    "type": "monetary"
+  },
+  "message_attachment_count": {
+    "string": "Attachment Count",
+    "type": "integer"
+  },
+  "suitable_journal_ids": {
+    "string": "Suitable Journal",
+    "type": "many2many"
+  },
+  "payment_reference": {
+    "help": "The payment reference to set on journal items.",
+    "string": "Payment Reference",
+    "type": "char"
+  },
+  "create_uid": {
+    "string": "Created by",
+    "type": "many2one"
+  },
+  "access_token": {
+    "string": "Security Token",
+    "type": "char"
+  },
+  "edi_error_count": {
+    "help": "How many EDIs are in error for this move ?",
+    "string": "Edi Error Count",
+    "type": "integer"
+  },
+  "access_warning": {
+    "string": "Access warning",
+    "type": "text"
+  },
+  "line_ids": {
+    "string": "Journal Items",
+    "type": "one2many"
+  },
+  "statement_line_id": {
+    "string": "Statement Line",
+    "type": "many2one"
+  },
+  "auto_post": {
+    "help": "If this checkbox is ticked, this entry will be automatically posted at its date.",
+    "string": "Post Automatically",
+    "type": "boolean"
+  },
+  "tax_cash_basis_rec_id": {
+    "help": "Technical field used to keep track of the tax cash basis reconciliation. This is needed when cancelling the source: it will post the inverse journal entry to cancel that part too.",
+    "string": "Tax Cash Basis Entry of",
+    "type": "many2one"
+  },
+  "user_id": {
+    "help": "Technical field used to fit the generic behavior in mail templates.",
+    "string": "User",
+    "type": "many2one"
+  },
+  "invoice_cash_rounding_id": {
+    "help": "Defines the smallest coinage of the currency that can be used to pay by cash.",
+    "string": "Cash Rounding Method",
+    "type": "many2one"
+  },
+  "bank_partner_id": {
+    "help": "Technical field to get the domain on the bank",
+    "string": "Bank Partner",
+    "type": "many2one"
+  },
+  "message_is_follower": {
+    "string": "Is Follower",
+    "type": "boolean"
+  },
+  "move_type": {
+    "string": "Type",
+    "type": "selection"
+  },
+  "invoice_user_id": {
+    "string": "Salesperson",
+    "type": "many2one"
+  },
+  "invoice_filter_type_domain": {
+    "help": "Technical field used to have a dynamic domain on journal / taxes in the form view.",
+    "string": "Invoice Filter Type Domain",
+    "type": "char"
+  },
+  "secure_sequence_number": {
+    "string": "Inalteralbility No Gap Sequence #",
+    "type": "integer"
+  },
+  "invoice_date": {
+    "string": "Invoice/Bill Date",
+    "type": "date"
+  },
+  "invoice_incoterm_id": {
+    "help": "International Commercial Terms are a series of predefined commercial terms used in international transactions.",
+    "string": "Incoterm",
+    "type": "many2one"
+  },
+  "amount_tax": {
+    "string": "Tax",
+    "type": "monetary"
+  },
+  "amount_untaxed": {
+    "string": "Untaxed Amount",
+    "type": "monetary"
+  },
+  "commercial_partner_id": {
+    "string": "Commercial Entity",
+    "type": "many2one"
+  },
+  "invoice_source_email": {
+    "string": "Source Email",
+    "type": "char"
+  },
+  "invoice_has_matching_suspense_amount": {
+    "help": "Technical field used to display an alert on invoices if there is at least a matching amount in any supsense account.",
+    "string": "Invoice Has Matching Suspense Amount",
+    "type": "boolean"
+  },
+  "company_id": {
+    "string": "Company",
+    "type": "many2one"
+  },
+  "reversed_entry_id": {
+    "string": "Reversal of",
+    "type": "many2one"
+  },
+  "qr_code_method": {
+    "help": "Type of QR-code to be generated for the payment of this invoice, when printing it. If left blank, the first available and usable method will be used.",
+    "string": "Payment QR-code",
+    "type": "selection"
+  },
+  "message_has_sms_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "SMS Delivery error",
+    "type": "boolean"
+  },
+  "sequence_number": {
+    "string": "Sequence Number",
+    "type": "integer"
+  },
+  "activity_type_id": {
+    "string": "Next Activity Type",
+    "type": "many2one"
+  },
+  "tax_cash_basis_move_id": {
+    "help": "The journal entry from which this tax cash basis journal entry has been created.",
+    "string": "Origin Tax Cash Basis Entry",
+    "type": "many2one"
+  },
+  "invoice_payments_widget": {
+    "string": "Invoice Payments Widget",
+    "type": "text"
+  },
+  "invoice_origin": {
+    "help": "The document(s) that generated the invoice.",
+    "string": "Origin",
+    "type": "char"
+  },
+  "authorized_transaction_ids": {
+    "string": "Authorized Transactions",
+    "type": "many2many"
+  },
+  "message_ids": {
+    "string": "Messages",
+    "type": "one2many"
+  },
+  "source_id": {
+    "help": "This is the source of the link, e.g. Search Engine, another domain, or name of email list",
+    "string": "Source",
+    "type": "many2one"
+  },
+  "amount_tax_signed": {
+    "string": "Tax Signed",
+    "type": "monetary"
+  },
+  "date": {
+    "string": "Date",
+    "type": "date"
+  },
+  "type_name": {
+    "string": "Type Name",
+    "type": "char"
+  },
+  "message_partner_ids": {
+    "string": "Followers (Partners)",
+    "type": "many2many"
+  },
+  "invoice_payment_term_id": {
+    "string": "Payment Terms",
+    "type": "many2one"
+  },
+  "show_reset_to_draft_button": {
+    "string": "Show Reset To Draft Button",
+    "type": "boolean"
+  },
+  "activity_exception_decoration": {
+    "help": "Type of the exception activity on record.",
+    "string": "Activity Exception Decoration",
+    "type": "selection"
+  },
+  "ref": {
+    "string": "Reference",
+    "type": "char"
+  },
+  "activity_ids": {
+    "string": "Activities",
+    "type": "one2many"
+  },
+  "amount_untaxed_signed": {
+    "string": "Untaxed Amount Signed",
+    "type": "monetary"
+  },
+  "partner_bank_id": {
+    "help": "Bank Account Number to which the invoice will be paid. A Company bank account if this is a Customer Invoice or Vendor Credit Note, otherwise a Partner bank account number.",
+    "string": "Recipient Bank",
+    "type": "many2one"
+  },
+  "has_reconciled_entries": {
+    "string": "Has Reconciled Entries",
+    "type": "boolean"
+  },
+  "transaction_ids": {
+    "string": "Transactions",
+    "type": "many2many"
+  },
+  "string_to_hash": {
+    "string": "String To Hash",
+    "type": "char"
+  },
+  "medium_id": {
+    "help": "This is the method of delivery, e.g. Postcard, Email, or Banner Ad",
+    "string": "Medium",
+    "type": "many2one"
+  },
+  "create_date": {
+    "string": "Created on",
+    "type": "datetime"
+  },
+  "campaign_id": {
+    "help": "This is a name that helps you keep track of your different campaign efforts, e.g. Fall_Drive, Christmas_Special",
+    "string": "Campaign",
+    "type": "many2one"
+  },
+  "edi_show_cancel_button": {
+    "string": "Edi Show Cancel Button",
+    "type": "boolean"
+  },
+  "payment_state": {
+    "string": "Payment Status",
+    "type": "selection"
+  },
+  "__last_update": {
+    "string": "Last Modified on",
+    "type": "datetime"
+  },
+  "show_name_warning": {
+    "string": "Show Name Warning",
+    "type": "boolean"
+  },
+  "activity_user_id": {
+    "string": "Responsible User",
+    "type": "many2one"
+  },
+  "message_follower_ids": {
+    "string": "Followers",
+    "type": "one2many"
+  },
+  "activity_exception_icon": {
+    "help": "Icon to indicate an exception activity.",
+    "string": "Icon",
+    "type": "char"
+  },
+  "display_name": {
+    "string": "Display Name",
+    "type": "char"
+  },
+  "country_code": {
+    "help": "The ISO country code in two chars. \nYou can use this field for quick search.",
+    "string": "Country Code",
+    "type": "char"
+  },
+  "highest_name": {
+    "string": "Highest Name",
+    "type": "char"
+  },
+  "edi_state": {
+    "help": "The aggregated state of all the EDIs of this move",
+    "string": "Electronic invoicing",
+    "type": "selection"
+  },
+  "name": {
+    "string": "Number",
+    "type": "char"
+  },
+  "website_message_ids": {
+    "help": "Website communication history",
+    "string": "Website Messages",
+    "type": "one2many"
+  },
+  "partner_shipping_id": {
+    "help": "Delivery address for current invoice.",
+    "string": "Delivery Address",
+    "type": "many2one"
+  },
+  "invoice_has_outstanding": {
+    "string": "Invoice Has Outstanding",
+    "type": "boolean"
+  },
+  "write_uid": {
+    "string": "Last Updated by",
+    "type": "many2one"
+  },
+  "posted_before": {
+    "help": "Technical field for knowing if the move has been posted before",
+    "string": "Posted Before",
+    "type": "boolean"
+  },
+  "display_qr_code": {
+    "string": "Display QR-code",
+    "type": "boolean"
+  },
+  "fiscal_position_id": {
+    "help": "Fiscal positions are used to adapt taxes and accounts for particular customers or sales orders/invoices. The default value comes from the customer.",
+    "string": "Fiscal Position",
+    "type": "many2one"
+  },
+  "company_currency_id": {
+    "string": "Company Currency",
+    "type": "many2one"
+  },
+  "message_unread": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Unread Messages",
+    "type": "boolean"
+  },
+  "partner_id": {
+    "string": "Partner",
+    "type": "many2one"
+  },
+  "payment_id": {
+    "string": "Payment",
+    "type": "many2one"
+  },
+  "invoice_vendor_bill_id": {
+    "help": "Auto-complete from a past bill.",
+    "string": "Vendor Bill",
+    "type": "many2one"
+  },
+  "to_check": {
+    "help": "If this checkbox is ticked, it means that the user was not sure of all the related information at the time of the creation of the move and that the move needs to be checked again.",
+    "string": "To Check",
+    "type": "boolean"
+  },
+  "journal_id": {
+    "string": "Journal",
+    "type": "many2one"
+  },
+  "activity_type_icon": {
+    "help": "Font awesome icon e.g. fa-tasks",
+    "string": "Activity Type Icon",
+    "type": "char"
+  },
+  "sequence_prefix": {
+    "string": "Sequence Prefix",
+    "type": "char"
+  },
+  "access_url": {
+    "help": "Customer Portal URL",
+    "string": "Portal Access URL",
+    "type": "char"
+  },
+  "amount_residual_signed": {
+    "string": "Amount Due Signed",
+    "type": "monetary"
+  },
+  "invoice_partner_display_name": {
+    "string": "Invoice Partner Display Name",
+    "type": "char"
+  },
+  "message_unread_counter": {
+    "help": "Number of unread messages",
+    "string": "Unread Messages Counter",
+    "type": "integer"
+  },
+  "message_has_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "Message Delivery error",
+    "type": "boolean"
+  },
+  "reversal_move_id": {
+    "string": "Reversal Move",
+    "type": "one2many"
+  },
+  "tax_lock_date_message": {
+    "help": "Technical field used to display a message when the invoice\u0027s accounting date is prior of the tax lock date.",
+    "string": "Tax Lock Date Message",
+    "type": "char"
+  },
+  "message_needaction": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Action Needed",
+    "type": "boolean"
+  },
+  "narration": {
+    "string": "Terms and Conditions",
+    "type": "text"
+  },
+  "edi_web_services_to_process": {
+    "help": "Technical field to display the documents that will be processed by the CRON",
+    "string": "Edi Web Services To Process",
+    "type": "text"
+  },
+  "activity_summary": {
+    "string": "Next Activity Summary",
+    "type": "char"
+  },
+  "is_move_sent": {
+    "help": "It indicates that the invoice/payment has been sent.",
+    "string": "Is Move Sent",
+    "type": "boolean"
+  },
+  "message_needaction_counter": {
+    "help": "Number of messages which requires an action",
+    "string": "Number of Actions",
+    "type": "integer"
+  },
+  "currency_id": {
+    "string": "Currency",
+    "type": "many2one"
+  },
+  "invoice_outstanding_credits_debits_widget": {
+    "string": "Invoice Outstanding Credits Debits Widget",
+    "type": "text"
+  }
+}

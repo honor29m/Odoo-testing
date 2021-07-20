@@ -1,0 +1,52 @@
+version: "3.8"
+services:
+  ejecutar-q2-template:
+    image: "gradle:jdk8-alpine"
+    command: ["gradle", "clean", "run", "--no-daemon", "--info"]
+    working_dir: /home/gradle/project
+    # env_file: .env
+    # environment:
+    #     TOKEN: $TOKEN
+    #     GHUSERNAME: $GHUSERNAME
+    network_mode: host
+    volumes:
+      - gradle_cache:/home/gradle/.gradle
+      - ./Q2-Template:/home/gradle/project
+
+  # see more in:
+  # - https://redislabs.com/blog/so-youre-looking-for-the-redis-gui/
+  # - https://www.npmjs.com/package/redis-commander
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis
+    network_mode: host
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    # environment:
+    # - REDIS_HOSTS=local:redis:6379
+    environment:
+      - REDIS_HOSTS=local:localhost:6379
+    network_mode: host
+    # ports:
+    # - "8081:8081"
+
+  ejecutar-q2-client:
+    image: "gradle:jdk8-alpine"
+    command: ["gradle", "clean", "run", "--no-daemon"]
+    working_dir: /home/gradle/project
+    # env_file: .env
+    # environment:
+    #     TOKEN: $TOKEN
+    #     GHUSERNAME: $GHUSERNAME
+    network_mode: host
+    volumes:
+      - gradle_cache:/home/gradle/.gradle
+      - ./Q2-Client:/home/gradle/project
+
+volumes:
+  gradle_cache:

@@ -1,0 +1,484 @@
+{
+  "write_date": {
+    "string": "Last Updated on",
+    "type": "datetime"
+  },
+  "description_purchase": {
+    "string": "Purchase Description",
+    "type": "text"
+  },
+  "message_main_attachment_id": {
+    "string": "Main Attachment",
+    "type": "many2one"
+  },
+  "sale_delay": {
+    "help": "Delivery lead time, in days. It\u0027s the number of days, promised to the customer, between the confirmation of the sales order and the delivery.",
+    "string": "Customer Lead Time",
+    "type": "float"
+  },
+  "reordering_max_qty": {
+    "string": "Reordering Max Qty",
+    "type": "float"
+  },
+  "can_image_1024_be_zoomed": {
+    "string": "Can Image 1024 be zoomed",
+    "type": "boolean"
+  },
+  "activity_date_deadline": {
+    "string": "Next Activity Deadline",
+    "type": "date"
+  },
+  "attribute_line_ids": {
+    "string": "Product Attributes",
+    "type": "one2many"
+  },
+  "message_channel_ids": {
+    "string": "Followers (Channels)",
+    "type": "many2many"
+  },
+  "type": {
+    "help": "A storable product is a product for which you manage stock. The Inventory app has to be installed.\nA consumable product is a product for which stock is not managed.\nA service is a non-material product you provide.",
+    "string": "Product Type",
+    "type": "selection"
+  },
+  "tracking": {
+    "help": "Ensure the traceability of a storable product in your warehouse.",
+    "string": "Tracking",
+    "type": "selection"
+  },
+  "incoming_qty": {
+    "string": "Incoming",
+    "type": "float"
+  },
+  "location_id": {
+    "string": "Location",
+    "type": "many2one"
+  },
+  "activity_state": {
+    "help": "Status based on activities\nOverdue: Due date is already passed\nToday: Activity date is today\nPlanned: Future activities.",
+    "string": "Activity State",
+    "type": "selection"
+  },
+  "message_has_error_counter": {
+    "help": "Number of messages with delivery error",
+    "string": "Number of errors",
+    "type": "integer"
+  },
+  "virtual_available": {
+    "string": "Forecasted Quantity",
+    "type": "float"
+  },
+  "seller_ids": {
+    "help": "Define vendor pricelists.",
+    "string": "Vendors",
+    "type": "one2many"
+  },
+  "volume_uom_name": {
+    "string": "Volume unit of measure label",
+    "type": "char"
+  },
+  "price": {
+    "string": "Price",
+    "type": "float"
+  },
+  "id": {
+    "string": "ID",
+    "type": "integer"
+  },
+  "uom_name": {
+    "string": "Unit of Measure Name",
+    "type": "char"
+  },
+  "default_code": {
+    "string": "Internal Reference",
+    "type": "char"
+  },
+  "visible_qty_configurator": {
+    "string": "Quantity visible in configurator",
+    "type": "boolean"
+  },
+  "invoice_policy": {
+    "help": "Ordered Quantity: Invoice quantities ordered by the customer.\nDelivered Quantity: Invoice quantities delivered to the customer.",
+    "string": "Invoicing Policy",
+    "type": "selection"
+  },
+  "message_attachment_count": {
+    "string": "Attachment Count",
+    "type": "integer"
+  },
+  "pricelist_id": {
+    "help": "Technical field. Used for searching on pricelists, not stored in database.",
+    "string": "Pricelist",
+    "type": "many2one"
+  },
+  "expense_policy": {
+    "help": "Expenses and vendor bills can be re-invoiced to a customer.With this option, a validated expense can be re-invoice to a customer at its cost or sales price.",
+    "string": "Re-Invoice Expenses",
+    "type": "selection"
+  },
+  "active": {
+    "help": "If unchecked, it will allow you to hide the product without removing it.",
+    "string": "Active",
+    "type": "boolean"
+  },
+  "image_1920": {
+    "string": "Image",
+    "type": "binary"
+  },
+  "create_uid": {
+    "string": "Created by",
+    "type": "many2one"
+  },
+  "uom_id": {
+    "help": "Default unit of measure used for all stock operations.",
+    "string": "Unit of Measure",
+    "type": "many2one"
+  },
+  "valuation": {
+    "help": "Manual: The accounting entries to value the inventory are not posted automatically.\n        Automated: An accounting entry is automatically created to value the inventory when a product enters or leaves the company.\n        ",
+    "string": "Inventory Valuation",
+    "type": "selection"
+  },
+  "visible_expense_policy": {
+    "string": "Re-Invoice Policy visible",
+    "type": "boolean"
+  },
+  "description_pickingin": {
+    "string": "Description on Receptions",
+    "type": "text"
+  },
+  "message_is_follower": {
+    "string": "Is Follower",
+    "type": "boolean"
+  },
+  "uom_po_id": {
+    "help": "Default unit of measure used for purchase orders. It must be in the same category as the default unit of measure.",
+    "string": "Purchase Unit of Measure",
+    "type": "many2one"
+  },
+  "description_pickingout": {
+    "string": "Description on Delivery Orders",
+    "type": "text"
+  },
+  "taxes_id": {
+    "help": "Default taxes used when selling the product.",
+    "string": "Customer Taxes",
+    "type": "many2many"
+  },
+  "reordering_min_qty": {
+    "string": "Reordering Min Qty",
+    "type": "float"
+  },
+  "sale_line_warn": {
+    "help": "Selecting the \"Warning\" option will notify user with the message, Selecting \"Blocking Message\" will throw an exception with the message and block the flow. The Message has to be written in the next field.",
+    "string": "Sales Order Line",
+    "type": "selection"
+  },
+  "purchase_ok": {
+    "string": "Can be Purchased",
+    "type": "boolean"
+  },
+  "company_id": {
+    "string": "Company",
+    "type": "many2one"
+  },
+  "weight_uom_name": {
+    "string": "Weight unit of measure label",
+    "type": "char"
+  },
+  "message_has_sms_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "SMS Delivery error",
+    "type": "boolean"
+  },
+  "sales_count": {
+    "string": "Sold",
+    "type": "float"
+  },
+  "list_price": {
+    "help": "Price at which the product is sold to customers.",
+    "string": "Sales Price",
+    "type": "float"
+  },
+  "route_from_categ_ids": {
+    "string": "Category Routes",
+    "type": "many2many"
+  },
+  "qty_available": {
+    "string": "Quantity On Hand",
+    "type": "float"
+  },
+  "has_available_route_ids": {
+    "string": "Routes can be selected on this product",
+    "type": "boolean"
+  },
+  "property_account_expense_id": {
+    "help": "Keep this field empty to use the default value from the product category. If anglo-saxon accounting with automated valuation method is configured, the expense account on the product category will be used.",
+    "string": "Expense Account",
+    "type": "many2one"
+  },
+  "activity_type_id": {
+    "string": "Next Activity Type",
+    "type": "many2one"
+  },
+  "message_ids": {
+    "string": "Messages",
+    "type": "one2many"
+  },
+  "property_stock_production": {
+    "help": "This stock location will be used, instead of the default one, as the source location for stock moves generated by manufacturing orders.",
+    "string": "Production Location",
+    "type": "many2one"
+  },
+  "product_variant_id": {
+    "string": "Product",
+    "type": "many2one"
+  },
+  "warehouse_id": {
+    "string": "Warehouse",
+    "type": "many2one"
+  },
+  "lst_price": {
+    "help": "Price at which the product is sold to customers.",
+    "string": "Public Price",
+    "type": "float"
+  },
+  "message_partner_ids": {
+    "string": "Followers (Partners)",
+    "type": "many2many"
+  },
+  "responsible_id": {
+    "help": "This user will be responsible of the next activities related to logistic operations for this product.",
+    "string": "Responsible",
+    "type": "many2one"
+  },
+  "nbr_reordering_rules": {
+    "string": "Reordering Rules",
+    "type": "integer"
+  },
+  "activity_exception_decoration": {
+    "help": "Type of the exception activity on record.",
+    "string": "Activity Exception Decoration",
+    "type": "selection"
+  },
+  "description_sale": {
+    "help": "A description of the Product that you want to communicate to your customers. This description will be copied to every Sales Order, Delivery Order and Customer Invoice/Credit Note",
+    "string": "Sales Description",
+    "type": "text"
+  },
+  "activity_ids": {
+    "string": "Activities",
+    "type": "one2many"
+  },
+  "product_variant_count": {
+    "string": "# Product Variants",
+    "type": "integer"
+  },
+  "outgoing_qty": {
+    "string": "Outgoing",
+    "type": "float"
+  },
+  "create_date": {
+    "string": "Created on",
+    "type": "datetime"
+  },
+  "barcode": {
+    "string": "Barcode",
+    "type": "char"
+  },
+  "image_512": {
+    "string": "Image 512",
+    "type": "binary"
+  },
+  "product_variant_ids": {
+    "string": "Products",
+    "type": "one2many"
+  },
+  "standard_price": {
+    "help": "In Standard Price \u0026 AVCO: value of the product (automatically computed in AVCO).\n        In FIFO: value of the last unit that left the stock (automatically computed).\n        Used to value the product when the purchase cost is not known (e.g. inventory adjustment).\n        Used to compute margins on sale orders.",
+    "string": "Cost",
+    "type": "float"
+  },
+  "__last_update": {
+    "string": "Last Modified on",
+    "type": "datetime"
+  },
+  "description_picking": {
+    "string": "Description on Picking",
+    "type": "text"
+  },
+  "weight": {
+    "string": "Weight",
+    "type": "float"
+  },
+  "activity_user_id": {
+    "string": "Responsible User",
+    "type": "many2one"
+  },
+  "message_follower_ids": {
+    "string": "Followers",
+    "type": "one2many"
+  },
+  "activity_exception_icon": {
+    "help": "Icon to indicate an exception activity.",
+    "string": "Icon",
+    "type": "char"
+  },
+  "display_name": {
+    "string": "Display Name",
+    "type": "char"
+  },
+  "volume": {
+    "string": "Volume",
+    "type": "float"
+  },
+  "sequence": {
+    "help": "Gives the sequence order when displaying a product list",
+    "string": "Sequence",
+    "type": "integer"
+  },
+  "packaging_ids": {
+    "help": "Gives the different ways to package the same product.",
+    "string": "Product Packages",
+    "type": "one2many"
+  },
+  "valid_product_template_attribute_line_ids": {
+    "help": "Technical compute",
+    "string": "Valid Product Attribute Lines",
+    "type": "many2many"
+  },
+  "name": {
+    "string": "Name",
+    "type": "char"
+  },
+  "website_message_ids": {
+    "help": "Website communication history",
+    "string": "Website Messages",
+    "type": "one2many"
+  },
+  "categ_id": {
+    "help": "Select category for the current product",
+    "string": "Product Category",
+    "type": "many2one"
+  },
+  "route_ids": {
+    "help": "Depending on the modules installed, this will allow you to define the route of the product: whether it will be bought, manufactured, replenished on order, etc.",
+    "string": "Routes",
+    "type": "many2many"
+  },
+  "write_uid": {
+    "string": "Last Updated by",
+    "type": "many2one"
+  },
+  "image_256": {
+    "string": "Image 256",
+    "type": "binary"
+  },
+  "color": {
+    "string": "Color Index",
+    "type": "integer"
+  },
+  "sale_ok": {
+    "string": "Can be Sold",
+    "type": "boolean"
+  },
+  "description": {
+    "string": "Description",
+    "type": "text"
+  },
+  "message_unread": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Unread Messages",
+    "type": "boolean"
+  },
+  "supplier_taxes_id": {
+    "help": "Default taxes used when buying the product.",
+    "string": "Vendor Taxes",
+    "type": "many2many"
+  },
+  "cost_method": {
+    "help": "Standard Price: The products are valued at their standard cost defined on the product.\n        Average Cost (AVCO): The products are valued at weighted average cost.\n        First In First Out (FIFO): The products are valued supposing those that enter the company first will also leave it first.\n        ",
+    "string": "Costing Method",
+    "type": "selection"
+  },
+  "property_account_income_id": {
+    "help": "Keep this field empty to use the default value from the product category.",
+    "string": "Income Account",
+    "type": "many2one"
+  },
+  "variant_seller_ids": {
+    "string": "Variant Seller",
+    "type": "one2many"
+  },
+  "activity_type_icon": {
+    "help": "Font awesome icon e.g. fa-tasks",
+    "string": "Activity Type Icon",
+    "type": "char"
+  },
+  "image_1024": {
+    "string": "Image 1024",
+    "type": "binary"
+  },
+  "property_stock_inventory": {
+    "help": "This stock location will be used, instead of the default one, as the source location for stock moves generated when you do an inventory.",
+    "string": "Inventory Location",
+    "type": "many2one"
+  },
+  "message_unread_counter": {
+    "help": "Number of unread messages",
+    "string": "Unread Messages Counter",
+    "type": "integer"
+  },
+  "service_type": {
+    "help": "Manually set quantities on order: Invoice based on the manually entered quantity, without creating an analytic account.\nTimesheets on contract: Invoice based on the tracked hours on the related timesheet.\nCreate a task and track hours: Create a task on the sales order validation and track the work hours.",
+    "string": "Track Service",
+    "type": "selection"
+  },
+  "message_has_error": {
+    "help": "If checked, some messages have a delivery error.",
+    "string": "Message Delivery error",
+    "type": "boolean"
+  },
+  "has_configurable_attributes": {
+    "string": "Is a configurable product",
+    "type": "boolean"
+  },
+  "message_needaction": {
+    "help": "If checked, new messages require your attention.",
+    "string": "Action Needed",
+    "type": "boolean"
+  },
+  "is_product_variant": {
+    "string": "Is a product variant",
+    "type": "boolean"
+  },
+  "activity_summary": {
+    "string": "Next Activity Summary",
+    "type": "char"
+  },
+  "cost_currency_id": {
+    "string": "Cost Currency",
+    "type": "many2one"
+  },
+  "message_needaction_counter": {
+    "help": "Number of messages which requires an action",
+    "string": "Number of Actions",
+    "type": "integer"
+  },
+  "sale_line_warn_msg": {
+    "string": "Message for Sales Order Line",
+    "type": "text"
+  },
+  "currency_id": {
+    "string": "Currency",
+    "type": "many2one"
+  },
+  "pricelist_item_count": {
+    "string": "Number of price rules",
+    "type": "integer"
+  },
+  "image_128": {
+    "string": "Image 128",
+    "type": "binary"
+  }
+}

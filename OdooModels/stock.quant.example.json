@@ -1,0 +1,52 @@
+[
+  {
+    "inventory_quantity": 0.0,
+    "write_date": "2021-06-07 18:10:13",
+    "write_uid": [
+      1,
+      "OdooBot"
+    ],
+    "quantity": -16.0,
+    "__last_update": "2021-06-07 18:10:13",
+    "product_uom_id": [
+      1,
+      "Units"
+    ],
+    "company_id": [
+      1,
+      "My Company (San Francisco)"
+    ],
+    "in_date": "2021-06-07 18:10:18",
+    "owner_id": false,
+    "package_id": false,
+    "display_name": "[FURN_0789] Individual Workplace",
+    "create_uid": [
+      1,
+      "OdooBot"
+    ],
+    "tracking": "none",
+    "location_id": [
+      22,
+      "Virtual Locations/Inventory adjustment"
+    ],
+    "available_quantity": -16.0,
+    "product_tmpl_id": [
+      22,
+      "[FURN_0789] Individual Workplace"
+    ],
+    "lot_id": false,
+    "reserved_quantity": 0.0,
+    "product_id": [
+      30,
+      "[FURN_0789] Individual Workplace"
+    ],
+    "id": 1,
+    "on_hand": false,
+    "create_date": "2021-06-07 18:10:13",
+    "value": 0.0,
+    "currency_id": [
+      3,
+      "VEF"
+    ]
+  }
+]

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="Q2.system" at="2021-05-26T15:48:43.995">
+  <info>
+    Q2 started, deployDir=/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy, environment=default
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.278" lifespan="275ms">
+  <version>
+    jPOS 2.1.6-SNAPSHOT master/a5b9931 (2021-03-11 22:10:37 UTC) 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+jPOS Community Edition, licensed under GNU AGPL v3.0.
+This software is probably not suitable for commercial use.
+Please see http://jpos.org/license for details.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iQEcBAEBAgAGBQJMolHDAAoJEOQyeO71nYtFv74H/3OgehDGEy1VXp2U3/GcAobg
+HH2eZjPUz53r38ARPiU3pzm9LwDa3WZgJJaa/b9VrJwKvbPwe9+0kY3gScDE1skT
+ladHt+KHHmGQArEutkzHlpZa73RbroFEIa1qmN6MaDEHGoxZqDh0Sv2cpvOaVYGO
+St8ZaddLBPC17bSjAPWo9sWbvL7FgPFOHhnPmbeux8SLtnfWxXWsgo5hLBanKmO1
+1z+I/w/6DL6ZYZU6bAJUk+eyVVImJqw0x3IEElI07Nh9MC6BA4iJ77ejobj8HI2r
+q9ulRPEqH9NR79619lNKVUkE206dVlXo7xHmJS1QZy5v/GT66xBxyDVfTduPFXk=
+=oP+v
+-----END PGP SIGNATURE-----
+
+  </version>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.286" lifespan="4ms">
+  <info>
+    deploy: /home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/05_xml_server.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.290" lifespan="4ms">
+  <info>
+    deploy: /home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.299" lifespan="9ms">
+  <info>
+    deploy: /home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.308" lifespan="9ms">
+  <info>
+    deploy: /home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/30_txnmgr.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:48:44.315" lifespan="6ms">
+  <info>
+    deploy: /home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="xml-server-8000.server" at="2021-05-26T15:48:44.349">
+  <iso-server>
+    listening on port 8000
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="2021-05-26T15:48:44.362">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="2021-05-26T15:48:44.363" lifespan="1ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-05-26T15:48:44.363">
+  <info>
+    Starting SystemMonitor
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-05-26T15:48:44.420">
+  <info>
+           OS: Linux (5.8.0-53-generic)
+         Java: 1.8.0_292 (Private Build) AES-secure
+  environment: default
+ process name: 73354@payall-template
+    user name: payall
+         host: payall-template/127.0.1.1
+          cwd: /home/payall/odooTest/Q2-Server/build/install/Q2-Server
+   free space: 357.1 GiB
+ usable space: 333.3 GiB
+      version: 2.1.6-SNAPSHOT (a5b9931)
+     instance: 48c13a3e-55a3-45f4-b0b9-9f9555a8c74b
+       uptime: 00:00:00.601 (2.010000)
+   processors: 12
+       drift : 0
+memory(t/u/f): 238/21/216
+     encoding: UTF-8
+     timezone: America/Caracas (Venezuela Time) -04:00
+watch service: sun.nio.fs.LinuxWatchService
+        clock: 1622058524 2021-05-26T19:48:44.365Z
+ thread count: 17
+ peak threads: 17
+ user threads: 14
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-48c13a3e-55a3-45f4-b0b9-9f9555a8c74b,5,main]
+        Thread[DestroyJavaVM,5,main]
+        Thread[Thread-1,5,main]
+        Thread[Timer-0,5,main]
+        Thread[Thread-4,5,main]
+        Thread[channel-sender-jpos-send,5,main]
+        Thread[channel-receiver-jpos-receive,5,main]
+        Thread[Timer-1,5,main]
+        Thread[txnmgr-0:idle,5,main]
+        Thread[txnmgr-1:idle,5,main]
+        Thread[pool-4-thread-1,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[xml-server-8000-ThreadPool.PooledThread-0,5,xml-server-8000-ThreadPool-0]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>$TAILLOCK.730306880</key>
+     key-count: 1
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  mux.jPOS-AUTORESPONDER: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=false, last=0
+  server.xml-server-8000: org.jpos.iso.ISOServer
+    connected=0, rx=0, tx=0, last=0
+  txnmgr: org.jpos.transaction.TransactionManager
+    in-transit=0/0, head=1, tail=1, paused=0, outstanding=0, active-sessions=2/128, tps=0, peak=0, avg=0.00
+  tspace:org.jpos.transaction.TransactionManager@2b879940: org.jpos.space.TSpace
+    <key count='1'>$TAIL</key>
+    <key count='1'>$HEAD</key>
+     key-count: 2
+        gcinfo: 0,0
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=0, last=0
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  xml-server-8000: org.jpos.q2.iso.QServer
+  </info>
+</log>
+<log realm="xml-server-8000.server.session/127.0.0.1:57518" at="2021-05-26T15:49:36.886">
+  <session-start/>
+</log>
+<log realm="xml-server-8000/127.0.0.1:57518" at="2021-05-26T15:49:36.889" lifespan="2ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.GenericPackager[cfg/base1.xml] -->
+      <header>081210FAFA</header>
+      <field id="0" value="0200"/>
+      <field id="43" value="dfernandez@payall.com.ve                "/>
+      <field id="45" value="Dionny Fernandez"/>
+      <field id="46" value="04140000000"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="xml-server-8000/127.0.0.1:57518" at="2021-05-26T15:49:37.064" lifespan="1ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.GenericPackager[cfg/base1.xml] -->
+      <header>081210FAFA</header>
+      <field id="0" value="0210"/>
+      <field id="3" value="13"/>
+      <field id="39" value="00"/>
+      <field id="43" value="dfernandez@payall.com.ve                "/>
+      <field id="45" value="Dionny Fernandez"/>
+      <field id="46" value="04140000000"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="xml-server-8000/127.0.0.1:57518" at="2021-05-26T15:49:37.066" lifespan="175ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="2021-05-26T15:49:37.065" lifespan="173ms">
+  <commit>
+    txnmgr-1:idle:1
+    <context>
+      TIMESTAMP: Wed May 26 15:49:36 VET 2021
+      SOURCE: org.jpos.iso.channel.NACChannel@77b8bd47
+      REQUEST: 
+       <isomsg direction="outgoing">
+         <!-- org.jpos.iso.packager.GenericPackager[cfg/base1.xml] -->
+         <header>081210FAFA</header>
+         <field id="0" value="0210"/>
+         <field id="3" value="13"/>
+         <field id="39" value="00"/>
+         <field id="43" value="dfernandez@payall.com.ve                "/>
+         <field id="45" value="Dionny Fernandez"/>
+         <field id="46" value="04140000000"/>
+       </isomsg>
+      
+      DESTINATION: jPOS-AUTORESPONDER
+      RESPONSE: 
+       <isomsg direction="outgoing">
+         <!-- org.jpos.iso.packager.GenericPackager[cfg/base1.xml] -->
+         <header>081210FAFA</header>
+         <field id="0" value="0210"/>
+         <field id="3" value="13"/>
+         <field id="39" value="00"/>
+         <field id="43" value="dfernandez@payall.com.ve                "/>
+         <field id="45" value="Dionny Fernandez"/>
+         <field id="46" value="04140000000"/>
+       </isomsg>
+      
+      RESULT: 
+       <result/>
+      
+    </context>
+            prepare: ValidateParticipant PREPARED READONLY
+            prepare: OdooParticipant PREPARED READONLY
+            prepare: o.j.t.p.SendResponse PREPARED READONLY
+             commit: ValidateParticipant
+             commit: OdooParticipant
+             commit: o.j.t.p.SendResponse
+     in-transit=0/0, head=2, tail=2, paused=0, outstanding=0, active-sessions=2/128, tps=0, peak=0, avg=0.00, elapsed=173ms
+    <profiler>
+      prepare: ValidateParticipant [0.4/0.4]
+      prepare: OdooParticipant [168.0/168.4]
+      prepare: o.j.t.p.SendResponse [0.2/168.7]
+       commit: ValidateParticipant [0.2/168.9]
+       commit: OdooParticipant [0.0/169.0]
+       commit: o.j.t.p.SendResponse [3.7/172.7]
+      end [1.7/174.5]
+    </profiler>
+  </commit>
+</log>
+<log realm="xml-server-8000.server.session/127.0.0.1:57518" at="2021-05-26T15:49:37.067">
+  <session-end/>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="2021-05-26T15:55:09.854">
+  <warn>
+    channel-receiver-jpos-receive
+    Read timeout / EOF - reconnecting
+  </warn>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:11.093">
+  <info>
+    shutting down (hook)
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.014">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/99_sysmon.xml
+  </trace>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-05-26T15:58:12.016">
+  <info>
+    Stopping SystemMonitor
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.019">
+  <info>
+    undeployed:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/99_sysmon.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.021">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/30_txnmgr.xml
+  </trace>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="2021-05-26T15:58:12.024">
+  <info>
+    stop Thread[txnmgr-1:idle,5,main], active sessions=1
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="2021-05-26T15:58:12.025" lifespan="1ms">
+  <info>
+    stop Thread[txnmgr-0:idle,5,main], active sessions=0
+  </info>
+</log>
+<log realm="org.jpos.q2.qbean.SystemMonitor" at="2021-05-26T15:58:12.026">
+  <info>
+           OS: Linux (5.8.0-53-generic)
+         Java: 1.8.0_292 (Private Build) AES-secure
+  environment: default
+ process name: 73354@payall-template
+    user name: payall
+         host: payall-template/127.0.1.1
+          cwd: /home/payall/odooTest/Q2-Server/build/install/Q2-Server
+   free space: 357.1 GiB
+ usable space: 333.3 GiB
+      version: 2.1.6-SNAPSHOT (a5b9931)
+     instance: 48c13a3e-55a3-45f4-b0b9-9f9555a8c74b
+       uptime: 00:09:28.255 (1.320000)
+   processors: 12
+       drift : 0
+memory(t/u/f): 238/30/207
+     encoding: UTF-8
+     timezone: America/Caracas (Venezuela Time) -04:00
+watch service: sun.nio.fs.LinuxWatchService
+        clock: 1622059092 2021-05-26T19:58:12.019Z
+ thread count: 18
+ peak threads: 20
+ user threads: 14
+        Thread[Reference Handler,10,system]
+        Thread[Finalizer,8,system]
+        Thread[Signal Dispatcher,9,system]
+        Thread[SIGTERM handler,9,system]
+        Thread[pool-1-thread-1,5,main]
+        Thread[Q2-48c13a3e-55a3-45f4-b0b9-9f9555a8c74b,5,main]
+        Thread[DestroyJavaVM,5,main]
+        Thread[Thread-1,5,main]
+        Thread[Timer-0,5,main]
+        Thread[Thread-4,5,main]
+        Thread[channel-sender-jpos-send,5,main]
+        Thread[channel-receiver-jpos-receive,5,main]
+        Thread[Timer-1,5,main]
+        Thread[txnmgr-0:idle,5,main]
+        Thread[txnmgr-1:idle,5,main]
+        Thread[SystemMonitor,5,main]
+        Thread[Q2-ShutdownHook,5,main]
+        Thread[xml-server-8000-ThreadPool.PooledThread-0-idle,5,xml-server-8000-ThreadPool-0]
+name-registrar:
+  tspace:default: org.jpos.space.TSpace
+    <key count='1'>jpos-channel.ready</key>
+    <key count='1'>$TAILLOCK.730306880</key>
+     key-count: 2
+        gcinfo: 0,0
+  Q2: org.jpos.q2.Q2
+  tspace:org.jpos.transaction.TransactionManager@2b879940: org.jpos.space.TSpace
+    <key count='1'>$TAIL</key>
+    <key count='1'>$HEAD</key>
+     key-count: 2
+        gcinfo: 0,0
+  jpos-channel: org.jpos.q2.iso.ChannelAdaptor
+    tx=0, rx=0, connects=2, last=0
+  channel.jpos-channel: org.jpos.iso.channel.NACChannel
+  logger.Q2: org.jpos.util.Logger
+  mux.jPOS-AUTORESPONDER: org.jpos.q2.iso.QMUX
+    tx=0, rx=0, tx_expired=0, tx_pending=0, rx_expired=0, rx_pending=0, rx_unhandled=0, rx_forwarded=0, connected=true, last=0
+  server.xml-server-8000: org.jpos.iso.ISOServer
+    connected=0, rx=0, tx=0, last=1622058576890, idle=515136ms
+  logger.: org.jpos.util.Logger
+  logger.Q2.buffered: org.jpos.util.BufferedLogListener
+  xml-server-8000: org.jpos.q2.iso.QServer
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.028" lifespan="1ms">
+  <info>
+    undeployed:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/30_txnmgr.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.030">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/20_mux_jpos.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.033">
+  <info>
+    undeployed:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/20_mux_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.035">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/10_channel_jpos.xml
+  </trace>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.038">
+  <info>
+    undeployed:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/10_channel_jpos.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.040">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/05_xml_server.xml
+  </trace>
+</log>
+<log realm="xml-server-8000.pool" at="2021-05-26T15:58:12.043">
+  <queue-closed/>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.044" lifespan="1ms">
+  <info>
+    undeployed:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/05_xml_server.xml
+  </info>
+</log>
+<log realm="Q2.system" at="2021-05-26T15:58:12.046">
+  <trace>
+    undeploying:/home/payall/odooTest/Q2-Server/build/install/Q2-Server/deploy/00_logger.xml
+  </trace>
+</log>
+</logger>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Implementation-Title: Q2-Server
+Implementation-Version: 2.1.6-SNAPSHOT
+Class-Path: lib/gson-2.8.6.jar lib/jpos-2.1.6-SNAPSHOT.jar lib/xmlrpc-
+ client-3.1.3.jar lib/org.osgi.core-6.0.0.jar lib/javassist-3.27.0-GA.
+ jar lib/snakeyaml-1.26.jar lib/jdbm-1.0.jar lib/je-18.3.12.jar lib/ss
+ hd-core-2.4.0.jar lib/eddsa-0.3.0.jar lib/jdom2-2.0.6.jar lib/javatup
+ les-1.2.jar lib/jline-3.19.0.jar lib/bsh-2.0b6.jar lib/commons-cli-1.
+ 4.jar lib/bcpg-jdk15on-1.67.jar lib/bcprov-jdk15on-1.67.jar lib/sshd-
+ common-2.4.0.jar lib/slf4j-api-1.7.30.jar lib/HdrHistogram-2.1.12.jar
+  lib/xmlrpc-common-3.1.3.jar lib/ws-commons-util-1.0.2.jar lib/junit-
+ 3.8.1.jar lib/xml-apis-1.0.b2.jar
+Main-Class: org.jpos.q2.Q2
+

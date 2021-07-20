@@ -1,0 +1,60 @@
+{
+  "name": {
+    "string": "Name",
+    "type": "char"
+  },
+  "zip": {
+    "string": "Zip",
+    "type": "char"
+  },
+  "phone": {
+    "string": "Phone",
+    "type": "char"
+  },
+  "country_id": {
+    "string": "Country",
+    "type": "many2one"
+  },
+  "city": {
+    "string": "City",
+    "type": "char"
+  },
+  "street2": {
+    "string": "Street2",
+    "type": "char"
+  },
+  "email": {
+    "string": "Email",
+    "type": "char"
+  },
+  "website": {
+    "string": "Website Link",
+    "type": "char"
+  },
+  "is_company": {
+    "help": "Check if the contact is a company, otherwise it is a person",
+    "string": "Is a Company",
+    "type": "boolean"
+  },
+  "company_type": {
+    "string": "Company Type",
+    "type": "selection"
+  },
+  "employee": {
+    "help": "Check this box if this contact is an Employee.",
+    "string": "Employee",
+    "type": "boolean"
+  },
+  "display_name": {
+    "string": "Display Name",
+    "type": "char"
+  },
+  "street": {
+    "string": "Street",
+    "type": "char"
+  },
+  "mobile": {
+    "string": "Mobile",
+    "type": "char"
+  }
+}
